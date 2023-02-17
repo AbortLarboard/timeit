@@ -2,7 +2,7 @@ import time
 from functools import wrap
 
 def timeit(func):
-    '''just add @timeit decorator to meassure the execution time of any function'''
+    '''just add @timeit decorator to any function/method to meassure its exeuction time'''
     @wraps(func)
     def timeit_wrapper(*args, **kwargs):
         start_time = time.perf_counter()
